@@ -1,0 +1,453 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: min(85%, 85rem);
+    margin-inline: auto;
+  }
+
+  .top{
+    font-family: "Jost", system-ui;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    color: #727477;
+    font-size: 15px;
+  }
+  .top-left{
+    display: flex;
+    gap: 20px;
+  }
+  .top-left-left,
+  .top-left-right,
+  .top-right-left{
+   display: flex;
+   gap: 12px;
+  }
+  .top-left-right i{
+    font-size: 1.2rem;
+  }
+  .inline-border{
+    border-bottom: 1px solid rgb(178, 178, 178);
+  }
+  .nav{
+    font-family: "Jost", system-ui;
+    display: flex;
+    justify-content:space-between;
+    padding: 10px 0;
+    align-items: center; 
+    position: sticky;
+    top: 0;
+    background: #ffffff;
+    z-index: 12;
+  }
+  .navleft a{
+    margin-right: 40px;
+    text-decoration: none;
+    color: #727477 ;
+  }
+  .navleft a:nth-child(5){
+    margin-right: 0;
+  }
+  .navright a{
+    margin-left: 6px;
+  }
+  .navright button{ 
+    color: #727477 ;  
+    width: 7.5em;
+    height: 3em;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 8px 18px;
+    background: transparent;
+    border: 2px solid #c1bcbc;
+    border-radius: 6px;
+    transition: 0.4s;
+  }
+  .navright button:hover{
+    transition: 0.4s;
+    color: white;
+    background: rgb(171, 138, 98);
+  }
+.hero{
+  height: 1000px;
+  background-image:url("https://moonlit-tailwind.netlify.app/assets/images/banner/home-2.1.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+}
+.overlay {
+  padding-top:310px;
+  padding-bottom:310px;
+  text-align: center;
+  background-color: #000834a6;
+  height: 1000px;
+
+}
+.overlay span ,h1 ,p{
+  color: white;
+}
+.overlay p, span {
+  font-family: "Jost", system-ui;
+}
+.overlay p{
+  max-width: 520px;
+  line-height: 2;
+}
+.overlay h1 {
+  margin: 20px 0;
+  font-family: "Gilda Display", serif;
+  font-weight: lighter;
+  font-size: 6rem;
+}
+.overlay span{
+  margin: 0 10px;
+}
+.herobottom button{
+  margin-top: 20px;
+  color: white;
+  width: 10.5em;
+  height: 3em;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 8px 18px;
+  background: rgb(171, 138, 98);
+  border: 0px solid transparent;
+  border-radius: 6px;
+}
+.bookcard{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 0 30px 30px 0 rgba(175,175,175,0.16);
+  z-index: 10;
+  background: #ffffff;
+  position: relative;
+  bottom: 32px;
+}
+
+.c label{
+  font-family: "Gilda Display", serif;
+  font-weight: lighter;
+  color: rgb(8, 20, 93);
+}
+.f{
+  font-size: 25px;
+}
+.b{ 
+  border-left: 1px solid #E4E4E4;
+}
+.c{
+  padding-left: 20px;
+  line-height: 1.9;
+  display: flex;
+  flex-direction: column;
+}
+.c input,
+.c select{
+  font-family: "Jost", system-ui;
+  font-size: 15px;
+  border: none;
+}
+.c button{
+ margin-top: -20px;
+}
+.u1{
+  font-size: 15px;
+  position: relative;
+  top:32px;
+  right:70px;
+}
+.u2{
+  font-size: 15px;
+  position: relative;
+  top:32px;
+  right:70px;
+}
+.about{
+  position: relative;
+  right: 50px;
+  margin-top: 7rem;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 0;
+}
+.left-side{
+  display: flex;
+  flex-direction: column;
+  width: min(55%, 55rem);
+  margin-inline: auto;
+  position: relative;
+  top:130px;
+  left:40px;
+}
+.right-side{
+  background:url("https://moonlit-tailwind.netlify.app/assets/images/about/about-1.webp")fixed;
+  width: 60vh;
+  height: 70vh;
+  border-radius: 10px;
+  position: relative;
+  right:40px;
+}
+.box{
+
+  box-shadow: 70px 70px 70px 70px rgba(135, 135, 135, 0.16);
+  border-radius: 10px;
+  background-color: white;
+  width: 210px;
+  height: 100px;
+  padding: 10px;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  top: 40px;
+  left: 450px;
+}
+.leftbox img{
+ border-radius: 10px;
+}
+.ff1{
+  font-size: 25px;
+  font-family: "Gilda Display", serif;
+  font-weight: normal;
+  color: #BA9E7D;
+}
+.ff2{
+  margin-top: 20px;
+  font-size: 4rem;
+  font-family: "Gilda Display", serif;
+  font-weight: normal;
+  color: #000834;
+}
+.ff3{
+  margin-top: 20px;
+  line-height: 1.9;
+  font-size: 15px;
+  font-family: "Jost", system-ui;
+  color: #848689;
+  width: min(90%, 100rem);
+  margin-inline: auto;
+  position: relative;
+  right:35px;
+}
+.f1{
+  font-family: "Gilda Display", serif;
+  font-weight: normal;
+  font-size: 25px;
+  color: rgb(8, 20, 93); 
+}
+.f2{
+  font-size: 15px;
+  color: #7D7E82;
+  font-family: "Jost", system-ui;
+}
+.facilitiesborder{
+  background: #F1F1F1;
+}
+.facilities{
+  padding: 120px 0px;
+}
+.facilitiestop,
+.facilitiesbottom{
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+.facilitiestop span,
+.facilitiesbottom span{
+  font-family: "Gilda Display", serif;
+  font-weight: normal;
+}
+.facilitiestop{
+  color: #AB8A62;
+  font-size: 30px;
+}
+.facilitiesbottom span{
+  line-height: 1.5;
+  color: #000834;
+  font-size: 70px;
+}
+.facilitesbox{
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+.box1{
+  padding: 40px 30px;
+  background: #ffffff;
+  border-radius: 10px;
+  text-align: center;
+  width: 303.25px;
+  height: 287px;
+  
+}
+.box1 img{
+  margin-bottom: 25px;
+  margin-left: 97.625px;
+  margin-right: 97.625px;
+}
+.box1 a{
+  margin-bottom: 15px;
+  font-size: 24px;
+  color: #000834;
+  font-family: "Gilda Display", serif;
+  text-decoration: none;
+}
+.box1 p{
+  
+  line-height: 28px;
+  height:84px ;
+  width: 243.25px;
+  color: #707276;
+}
+.room{
+  padding: 120px 0px;
+}
+.roomtop{
+ padding-bottom: 120px;
+ display: flex;
+ justify-content: space-between;
+}
+.roomleft h2{
+  font-family: "Gilda Display", serif;
+  font-weight: lighter;
+  font-size: 70px;
+  line-height: 70px;
+  color: #000834;
+  
+}
+.roomright p{
+  width: min(665px);
+  color: #707276;
+  font-family: "Jost", system-ui;
+  line-height: 28px;
+}
+.roompic{
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+}
+.rpic1{
+  background:url("https://moonlit-tailwind.netlify.app/assets/images/room/1.webp")fixed;
+  background-position:start;
+  width: 50vh;
+  height: 60vh;
+  border-radius: 10px; 
+}
+.rpic2{
+  background:url("https://moonlit-tailwind.netlify.app/assets/images/room/2.webp")fixed;
+  background-position:center;
+  width: 50vh;
+  height: 60vh;
+  border-radius: 10px;
+  background-color: #000834a6;
+}
+.rpic3{
+  background:url("https://moonlit-tailwind.netlify.app/assets/images/room/3.webp")fixed;
+  background-position:start;
+  width: 50vh;
+  height: 60vh;
+  border-radius: 10px;
+  background-color: #000834a6;
+}
+.rpic1 a,
+.rpic2 a,
+.rpic3 a{
+  font-size: 18px;
+  text-decoration: none;
+}
+.overlay1{
+  width: 50vh;
+  height: 60vh;
+  border-radius: 10px;
+  background: #3f3c3c6d;
+}
+.rpic1 i,
+.rpic2 i,
+.rpic3 i{
+  line-height: 1.9;
+  color: white;
+}
+.rpic1 h2,
+.rpic2 h2,
+.rpic3 h2{
+  font-size: 50px;
+  line-height: 1.9;
+  color: white;
+}
+.rpic1 span,
+.rpic2 span,
+.rpic3 span{
+  color: white;
+}
+.down{
+  position: relative;
+  top: 400px;
+  left: 20px;
+}
+.review{
+  padding: 120px 0px;
+  background: #F1F1F1;
+}
+.reviewcontent{
+  text-align: center;
+}
+.reviewcontent h1,
+.reviewcontent i{
+  color: #B1936E;
+}
+.reviewcontent h1{
+  font-family: "Gilda Display", serif;
+  font-weight: lighter;
+  font-size: 30px;
+}
+.reviewcontent h2{
+  font-size: 70px;
+  font-family: "Gilda Display", serif;
+  font-weight: lighter;
+}
+.reviewcontent i{
+  line-height: 40px;
+  font-size: 30px;
+}
+.reviewcontent p{
+  font-size: 28px;
+  line-height: 42px;
+  color:#65676B;
+  text-align: center;
+  width: 1024px;
+  height: 126px;
+}
+.flex1 h6{
+  color: #000834a6;
+  font-family: "Gilda Display", serif;
+  font-weight: lighter;
+  font-size: 30px;
+}
+.flex1 span{
+  font-size: 13px;
+}
+.flex0{
+  display: flex;
+  justify-content: center;
+
+}
+.flex img{
+  border-radius: 9999px;
+}
+.end{
+  display: flex;
+  justify-content: end;
+}
+
